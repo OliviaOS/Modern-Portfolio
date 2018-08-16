@@ -1,0 +1,28 @@
+.menu-btn{
+  position: absolute;
+  right:40px;
+  top:40px;
+  z-index: 4;
+  cursor:pointer;
+  @include easeOut();
+
+  .btn-line{
+    background: #fff;
+    width:25px;
+    height:3px;
+    margin: 0 0 5px 0;
+    @include easeOut();
+  }
+
+  &.close{
+    transform: rotate(90deg);
+    .btn-line{
+      //Line1-Rotate
+      &:nth-child(1){transform:rotate(45deg) translate(6.25px,5px);}
+      //Line2-Hide
+      &:nth-child(2){opacity:0;}
+      //Line3-Rotate
+      &:nth-child(3){transform:rotate(-45deg) translate(6.5px,-5.25px);}
+    }
+  }
+}
