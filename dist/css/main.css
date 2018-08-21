@@ -87,6 +87,34 @@
     .menu .nav-link:hover {
       color: #eece1a; }
 
+@media only screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1.5rem; }
+  div.menu-branding,
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    div.menu-branding.show,
+    ul.menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    height: 33vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .protrait {
+      height: 100px;
+      width: 100px;
+      background: url("../img/protrait small.jpg");
+      background-size: cover; }
+  .menu-nav {
+    height: 67vh;
+    transform: translate3d(-100%, 0, 0);
+    justify-content: flex-start; } }
+
 * {
   box-sizing: border-box; }
 
