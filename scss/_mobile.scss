@@ -47,6 +47,14 @@
     transform:translate3d(-100%,0,0);
     justify-content: flex-start;
   }
+
+  //About Page
+  main{
+    .about-info{
+      grid-template-areas:'bioimage' 'bio' 'job1' 'job2' 'job3';
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 //Small-Screen  eg.phone

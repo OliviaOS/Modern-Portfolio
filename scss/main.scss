@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 
 * {
@@ -111,3 +110,5 @@ main{
   background: darken($primary-color,9);
   height:50px;
 }
+
+@import 'mobile'; //import at the very bottom; so run after initial css
